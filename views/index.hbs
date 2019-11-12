@@ -23,7 +23,7 @@
     <div>
         {{# each items }}
             <article class="item">
-                <div>Name: <p id="name">{{ this.name }}</p></div>
+                <div>Name: <p id="name">{{{ this.name }}}</p></div>
                 <div>Age: </p>{{ this.age }}</p></div>
                 <div>Password: </p>{{ this.pass }}</p></div>
                 <div>ID: </p>{{ this._id }}</p></div>
@@ -59,7 +59,7 @@
     <h3>Delete Data</h3>
     <form action="/delete" method="post">
         <div class="input">
-            <label for="id">ID</label>
+            <label for="id">ID</label>  
             <input type="text" id="id" name="id">
         </div>
         <button type="submit">DELETE</button>
